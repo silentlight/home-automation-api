@@ -12,4 +12,5 @@ test:
   database: home_automation_api_test
 
 production:
-  url: <%= ENV['DATABASE_URL'] %>
+  <<: *default
+  database: home_automation_api_production
