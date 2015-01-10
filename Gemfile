@@ -12,8 +12,7 @@ gem 'jquery-rails'
 gem 'spring',        group: :development
 
 gem 'grape', '0.9.0'
-gem 'active_model_serializers', '~> 0.8.0'
-gem 'grape-active_model_serializers'
+gem 'grape-jbuilder', '~> 0.2.0'
 gem 'unicorn'
 gem 'figaro'
 gem 'foreigner'

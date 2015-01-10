@@ -10,5 +10,17 @@ class Services::Sensors < Grape::API
       Sensor::LightLevel.create({ value: params[:light_level], created_at: created_at })
       1
     end
+
+    get 'temperature' do
+      @entries = Sensor::Temperature.all.order('created_at DESC')
+    end
+
+    get 'humidity' do
+      @entries = Sensor::Humidity.all.order('created_at DESC')
+    end
+
+    get 'light-level' do
+      @entries = Sensor::LightLevel.all.order('created_at DESC')
+    end
   end
 end
