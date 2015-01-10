@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="4221508294">
+    <data-source source="LOCAL" name="Rails HomeAutomation: development" uuid="8754d44b-dded-450f-af68-998e3875c2e2">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:home_automation_api_development</jdbc-url>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails HomeAutomation: test" uuid="3dfd5de8-b3bc-4dd1-8ef6-543a32bf68a0">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:home_automation_api_test</jdbc-url>
+      <libraries />
+    </data-source>
+  </component>
+</project>
+

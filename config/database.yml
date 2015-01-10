@@ -1,0 +1,15 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
+development:
+  <<: *default
+  database: home_automation_api_development
+
+test:
+  <<: *default
+  database: home_automation_api_test
+
+production:
+  url: <%= ENV['DATABASE_URL'] %>
