@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<component name="dataSourceStorage">
-  <data-source source="LOCAL" name="Rails HomeAutomation: development" uuid="8754d44b-dded-450f-af68-998e3875c2e2">
-    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
-  </data-source>
-  <data-source source="LOCAL" name="Rails HomeAutomation: test" uuid="3dfd5de8-b3bc-4dd1-8ef6-543a32bf68a0">
-    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
-  </data-source>
-</component>
