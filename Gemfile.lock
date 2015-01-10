@@ -43,6 +43,13 @@ GEM
     coderay (1.1.0)
     coercible (1.0.0)
       descendants_tracker (~> 0.0.1)
+    coffee-rails (4.0.1)
+      coffee-script (>= 2.2.0)
+      railties (>= 4.0.0, < 5.0)
+    coffee-script (2.3.0)
+      coffee-script-source
+      execjs
+    coffee-script-source (1.8.0)
     columnize (0.9.0)
     debugger-linecache (1.2.0)
     descendants_tracker (0.0.4)
@@ -54,6 +61,7 @@ GEM
       request_store (~> 1.0)
     equalizer (0.0.9)
     erubis (2.7.0)
+    execjs (2.2.2)
     figaro (1.0.0)
       thor (~> 0.14)
     foreigner (1.7.1)
@@ -75,6 +83,9 @@ GEM
     hike (1.2.3)
     i18n (0.7.0)
     ice_nine (0.11.1)
+    jquery-rails (3.1.2)
+      railties (>= 3.0, < 5.0)
+      thor (>= 0.14, < 2.0)
     json (1.8.2)
     kgio (2.9.2)
     libv8 (3.16.14.7)
@@ -122,6 +133,12 @@ GEM
     rake (10.4.2)
     ref (1.0.5)
     request_store (1.1.0)
+    sass (3.2.19)
+    sass-rails (4.0.5)
+      railties (>= 4.0.0, < 5.0)
+      sass (~> 3.2.2)
+      sprockets (~> 2.8, < 3.0)
+      sprockets-rails (~> 2.0)
     seed-fu (2.3.4)
       activerecord (>= 3.1, <= 4.2)
       activesupport (>= 3.1, <= 4.2)
@@ -144,6 +161,9 @@ GEM
     tilt (1.4.1)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
+    uglifier (2.7.0)
+      execjs (>= 0.3.0)
+      json (>= 1.8.0)
     unicorn (4.8.3)
       kgio (~> 2.6)
       rack
@@ -160,17 +180,21 @@ PLATFORMS
 DEPENDENCIES
   active_model_serializers (~> 0.8.0)
   cancancan (~> 1.9)
+  coffee-rails (~> 4.0.0)
   draper
   figaro
   foreigner
   grape (= 0.9.0)
   grape-active_model_serializers
+  jquery-rails
   pg
   pry-byebug
   pry-rails
   rack-cors
   rails (= 4.1.8)
+  sass-rails (~> 4.0.3)
   seed-fu
   spring
   therubyracer
+  uglifier (>= 1.3.0)
   unicorn
