@@ -24,15 +24,15 @@ class Services::Sensors < Grape::API
     end
 
     get 'temperature/now' do
-      RestClient.get("#{ENV['ARDUINO_URL']}/temperature").to_json
+      JSON.parse(RestClient.get("#{ENV['ARDUINO_URL']}/temperature"))
     end
 
     get 'humidity/now' do
-      RestClient.get("#{ENV['ARDUINO_URL']}/humidity").to_json
+      JSON.parse(RestClient.get("#{ENV['ARDUINO_URL']}/humidity"))
     end
 
     get 'light-level/now' do
-      RestClient.get("#{ENV['ARDUINO_URL']}/light-level").to_json
+      JSON.parse(RestClient.get("#{ENV['ARDUINO_URL']}/light-level"))
     end
   end
 end

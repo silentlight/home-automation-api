@@ -6,7 +6,7 @@ class Services::Inputs < Grape::API
     end
     get 'led/:state' do
       action = (params[:state] == 1) ? 'led-on' : 'led-off'
-      RestClient.get("#{ENV['ARDUINO_URL']}/#{action}").as_json
+      JSON.parse(RestClient.get("#{ENV['ARDUINO_URL']}/#{action}"))
     end
 
   end
