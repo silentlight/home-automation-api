@@ -21,6 +21,8 @@ gem 'draper'
 gem 'cancancan', '~> 1.9'
 gem 'rack-cors'
 
+gem 'rest-client'
+
 group :development, :test do
   gem 'pry-rails'
   gem 'pry-byebug'

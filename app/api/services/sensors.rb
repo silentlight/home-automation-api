@@ -11,16 +11,28 @@ class Services::Sensors < Grape::API
       1
     end
 
-    get 'temperature' do
+    get 'temperature/history' do
       @entries = Sensor::Temperature.all.order('created_at DESC')
     end
 
-    get 'humidity' do
+    get 'humidity/history' do
       @entries = Sensor::Humidity.all.order('created_at DESC')
     end
 
-    get 'light-level' do
+    get 'light-level/history' do
       @entries = Sensor::LightLevel.all.order('created_at DESC')
+    end
+
+    get 'temperature/now' do
+      RestClient.get("#{ENV['ARDUINO_URL']}/temperature").to_json
+    end
+
+    get 'humidity/now' do
+      RestClient.get("#{ENV['ARDUINO_URL']}/humidity").to_json
+    end
+
+    get 'light-level/now' do
+      RestClient.get("#{ENV['ARDUINO_URL']}/light-level").to_json
     end
   end
 end
