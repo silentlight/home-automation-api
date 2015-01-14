@@ -7,4 +7,5 @@ class API < Grape::API
   end
 
   mount Services::Sensors
+  mount Services::Inputs
 end
