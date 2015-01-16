@@ -2,7 +2,7 @@ class Services::Inputs < Grape::API
   resources :inputs do
 
     params do
-      options :state,  type: Integer
+      optional :state,  type: Integer
     end
     get 'led' do
       if params[:state].present?
